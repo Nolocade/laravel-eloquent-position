@@ -53,7 +53,7 @@ trait PositionTrait
      */
     public function getPositionGroup()
     {
-        return $this->positionOption('positionGroup', function ($group) {
+        return $this->positionOption('positionGroup', null, function ($group) {
 
             // Convert single column into array
             if (is_string($group)) {
